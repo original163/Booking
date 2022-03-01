@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD08AC2A27C6450B003187BB /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD4618FF27C364FE00D3CAC0 /* Montserrat-Regular.ttf */; };
+		CD08AC2C27C7B633003187BB /* Shodow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD08AC2B27C7B633003187BB /* Shodow.swift */; };
 		CD4618E927C238BA00D3CAC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4618E827C238BA00D3CAC0 /* AppDelegate.swift */; };
 		CD4618EB27C238BA00D3CAC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4618EA27C238BA00D3CAC0 /* SceneDelegate.swift */; };
 		CD4618ED27C238BA00D3CAC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4618EC27C238BA00D3CAC0 /* ViewController.swift */; };
 		CD4618F027C238BA00D3CAC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4618EE27C238BA00D3CAC0 /* Main.storyboard */; };
 		CD4618F227C238BC00D3CAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4618F127C238BC00D3CAC0 /* Assets.xcassets */; };
 		CD4618F527C238BC00D3CAC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4618F327C238BC00D3CAC0 /* LaunchScreen.storyboard */; };
+		CD8A8EC527C52B74009F1321 /* OfficeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8A8EC327C52B74009F1321 /* OfficeCell.swift */; };
+		CD8A8EC627C52B74009F1321 /* OfficeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8A8EC427C52B74009F1321 /* OfficeCell.xib */; };
+		CDD33EF327CE395D00C8D7A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD33EF227CE395D00C8D7A6 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD08AC2B27C7B633003187BB /* Shodow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shodow.swift; sourceTree = "<group>"; };
 		CD4618E527C238BA00D3CAC0 /* Booking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Booking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4618E827C238BA00D3CAC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD4618EA27C238BA00D3CAC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		CD4618F127C238BC00D3CAC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD4618F427C238BC00D3CAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD4618F627C238BC00D3CAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD4618FF27C364FE00D3CAC0 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		CD8A8EC327C52B74009F1321 /* OfficeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeCell.swift; sourceTree = "<group>"; };
+		CD8A8EC427C52B74009F1321 /* OfficeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfficeCell.xib; sourceTree = "<group>"; };
+		CDD33EF227CE395D00C8D7A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,36 @@
 		CD4618E727C238BA00D3CAC0 /* Booking */ = {
 			isa = PBXGroup;
 			children = (
+				CDD33EF127CE390E00C8D7A6 /* extensions */,
 				CD4618E827C238BA00D3CAC0 /* AppDelegate.swift */,
 				CD4618EA27C238BA00D3CAC0 /* SceneDelegate.swift */,
+				CD8A8EC327C52B74009F1321 /* OfficeCell.swift */,
 				CD4618EC27C238BA00D3CAC0 /* ViewController.swift */,
+				CDD33EF227CE395D00C8D7A6 /* Constants.swift */,
+				CD8A8EC427C52B74009F1321 /* OfficeCell.xib */,
 				CD4618EE27C238BA00D3CAC0 /* Main.storyboard */,
 				CD4618F127C238BC00D3CAC0 /* Assets.xcassets */,
 				CD4618F327C238BC00D3CAC0 /* LaunchScreen.storyboard */,
 				CD4618F627C238BC00D3CAC0 /* Info.plist */,
+				CD4618FC27C24A6F00D3CAC0 /* fonts */,
 			);
 			path = Booking;
+			sourceTree = "<group>";
+		};
+		CD4618FC27C24A6F00D3CAC0 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CD4618FF27C364FE00D3CAC0 /* Montserrat-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		CDD33EF127CE390E00C8D7A6 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD08AC2B27C7B633003187BB /* Shodow.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +156,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD08AC2A27C6450B003187BB /* Montserrat-Regular.ttf in Resources */,
 				CD4618F527C238BC00D3CAC0 /* LaunchScreen.storyboard in Resources */,
 				CD4618F227C238BC00D3CAC0 /* Assets.xcassets in Resources */,
 				CD4618F027C238BA00D3CAC0 /* Main.storyboard in Resources */,
+				CD8A8EC627C52B74009F1321 /* OfficeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD4618ED27C238BA00D3CAC0 /* ViewController.swift in Sources */,
+				CD08AC2C27C7B633003187BB /* Shodow.swift in Sources */,
 				CD4618E927C238BA00D3CAC0 /* AppDelegate.swift in Sources */,
 				CD4618EB27C238BA00D3CAC0 /* SceneDelegate.swift in Sources */,
+				CD8A8EC527C52B74009F1321 /* OfficeCell.swift in Sources */,
+				CDD33EF327CE395D00C8D7A6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
