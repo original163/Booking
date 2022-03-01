@@ -28,6 +28,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: K.OfficeCell.nibName, bundle: nil),
                            forCellReuseIdentifier: K.OfficeCell.reuseId)
@@ -47,7 +49,7 @@ class ViewController: UIViewController {
 
 
 
-extension ViewController: UITableViewDataSource {
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return offices.count 
     }
@@ -64,5 +66,8 @@ extension ViewController: UITableViewDataSource {
         return returnedCell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        print(indexPath.row)
 }
-
+}
